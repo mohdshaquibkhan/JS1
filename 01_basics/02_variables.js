@@ -8,7 +8,7 @@
  accountPassword = "123456"
  accountCity = "Jaipur"
  
- 
+ console.log("hlw ");
 
  console.table([accountId, accountEmail, accountPassword, accountCity, accountstate]);
  
