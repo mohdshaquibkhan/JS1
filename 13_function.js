@@ -40,5 +40,42 @@ const result = addTwoNumbers(3, 5)
     return `${username} just logged in`
  }
 
- console.log(loginUserMessage())
+ // console.log(loginUserMessage())
 
+ 
+function calculateCartPrice(...num1)                  // (...num1)  is know as rest or spread operator
+                
+{       
+    return num1
+
+}
+
+//  console.log(calculateCartPrice(200, 400, 500))
+
+const user = {
+    username: "irfan",
+    price: 199
+}
+
+function handleobject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleobject(user)                                    // function call
+
+
+handleobject({                                           // object pass
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 500]                        // array pass
+
+function returnSecondValue(getArray){                     // function deffined
+
+      return getArray[2]
+}
+
+// console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([100, 400, 600, 700]));
