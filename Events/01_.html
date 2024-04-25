@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html events</title>
+</head>
+<body style="background-color: rgb(26, 173, 176);">
+    <h2>Amazing Image</h2>
+    
+    <div>
+        
+    <ul id="image">
+        <li>img width="200px" id="photoshop" src="IMG_20230101_113710.jpg" alt="photoshop"</li>
+        <img src="photo12.jpg" width="200px" >
+    </ul>
+    </div>
+    
+</body>
+<script>
+ //document.getElementById('welcome').onclick = function(){
+   // alert("welcome clicked")
+ // }
+
+  document.getElementById('welcome').addEventListener('click', function(e)
+  {
+   console.log(e);
+  })
+
+  // type, timestamp, defaultPrevented
+  // target, toElement, srcElement, currentTarget, clientX
+  // altkey, ctrlkey
+  
+
+    document.querySelector('image').addEventListener
+    ('click', function(e){
+      console.log(e.target.parentNode);
+      let removeIt = e.target.parentNode
+     // removeIt.remove()
+     
+    })
+
+    removeIt.parentNode.removeChild(removeIt)
+
+</script>
+</html>
