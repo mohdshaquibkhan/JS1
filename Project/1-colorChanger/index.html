@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+
+    <style> 
+    body{
+        margin: 0px;
+        padding: 20px 100px;
+    }
+   h1 { 
+    text-align: center;
+    text-decoration: underline;
+
+    }
+    img{
+        width: 100%;
+        height: 50%;
+        margin: 0 auto;
+        
+    }
+    p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .btn{
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border: solid grey 2px ;
+        border-radius: 50%;
+        cursor: pointer;
+
+
+    }
+    #violet{
+     background-color: #ce9aff;
+    }
+    #aqua{
+     background-color: aquamarine;
+    }
+    #black{
+     background-color: black;
+    }
+    #white{
+     background-color: white;
+    }
+    #color-switcher{
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="">
+    <p class="text">
+        Trees are Nature’s bounty. Trees are of many different kinds. There are flowering trees, which bear blossoms, and non-flowering ones, which do not bloom into flowers. There are evergreen trees, which stay green through the year. There are also deciduous ones which may shed their leaves during a particular season annually making their branches turn bare.
+         Trees make landscapes beautiful. Trees are invaluable to man and terrestrial life forms. Trees maintain ecological balance and equilibrium. Trees must be protected.
+          The felling of trees must be prevented. Tree plantation activities must be encouraged to make our environment green, beautiful and healthy.  
+          There are many different types of trees that grow. Trees are food for man and all herbivorous animals. The roots, stems, leaves, flowers, fruits and seeds of trees may be edible. Trees are also home to many wildlife species. Animals seek the shade and shelter of trees. Birds build their nests in trees. Reptiles and insects also live in trees.
+
+          Trees help in binding the soil. Trees and forests also play a role in maintaining the hydrological cycle and rainfall patterns. Trees are Nature’s bounty. We must not cut down trees. We must protect trees, and help grow more trees.
+        </p>
+        <p>
+            Trees give us many benefits. Trees are the green cover of the planet. Trees need water, sunshine and air to grow. The process of photosynthesis that occurs in trees, that helps them grow, uses oxygen and gives out carbon-dioxide. Thus, they contribute to the oxygen in the air that we need to breathe to stay alive. They also use up the carbon-dioxide that is present in the air, and thus prevent the accumulation of the greenhouse gas that leads to global warming and climate change.
+
+Trees also help in binding the soil. When trees are cut off, the most fertile top soil layer gets washed away easily in rains or floods. Trees are food to man and all herbivorous animals.
+
+Trees must be protected. The felling of trees should be prevented. Trees give beauty to a place. Tree plantation activities must be encouraged to make our planet cleaner and greener.
+        </p>
+        
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == "#000000") {
+                for(let element of txt){
+                    element.style.color = "white";
+
+                }
+               
+            } else{
+                    for(let element of txt){
+                    element.style.color = "black";
+                }
+         }
+        }
+    </script>
+</body>
+
+</html>
